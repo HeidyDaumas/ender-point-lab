@@ -1,0 +1,28 @@
+# Only these reviewed source/documentation files belong in the public repository.
+# New files must be explicitly allowlisted here before they can be staged.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/requirements.txt
+!/printer.example.json
+!/server.py
+!/index.html
+!/measurements.js
+!/test_panel.py
+!/test_measurements.js
+!/test_config.py
+!/scripts/
+/scripts/*
+!/scripts/audit_public_tree.py
+
+# Local printer configuration, captures and runtime output must stay private.
+**/printer.local.json
+**/.local-data/
+**/.env*
+**/__pycache__/
+**/*.pyc
+**/*.log
+**/*.jsonl
+**/fresh-mesh-*
+**/.DS_Store
